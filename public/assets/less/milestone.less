@@ -1,0 +1,191 @@
+.csi-milestone-about {
+  background: url('http://placehold.it/1920x695') top center no-repeat fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .csi-inner {
+    .bg-rgba(@black-color, 0.90);
+  }
+}
+
+.csi-milestone {
+  .csi-counter-area {
+    margin-bottom: 4.2rem;
+    color: @white-color;
+    position: relative;
+    border-radius: 6px;
+    text-align: center;
+    img {
+      opacity: .7;
+      margin-bottom: -5px;
+    }
+    .counter-text {
+      text-align: center;
+      position: relative;
+      .csi-counter {
+        display: block;
+        .font-noline(4.2);
+        font-weight: 900;
+      }
+      small {
+        font-family: @csi-heading-font;
+        .font-size(26);
+        font-weight: 400;
+        letter-spacing: .05rem;
+        display: block;
+        margin-bottom: .5rem;
+      }
+    }
+    &:hover {
+
+    }
+  }
+}
+
+
+
+//VIDEO
+.csi-video-area {
+  figure {
+    position: relative;
+    border-radius: 6px;
+    img {
+      border-radius: 6px;
+    }
+    figcaption {
+      .bg-rgba(@black-color, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .video-icon {
+        display: table;
+        height: 100%;
+        width: 100%;
+        .csi-vertical {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+        }
+        .icon {
+          position: relative;
+          .transition-duration(@duration: 0.3s);
+          z-index: 2;
+          &:before {
+            content: '';
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            top: -62px;
+            left: 32px;
+            display: block;
+            z-index: -1;
+            opacity: 1;
+            border: 5px solid rgba(255,255,255,.5);
+            .transition-duration(@duration: 0.3s);
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            top: -20px;
+            left: -20px;
+            display: block;
+            .bg-rgba(@white-color, 0.5);
+            z-index: -1;
+            opacity: 0;
+            .transition-duration(@duration: 0.3s);
+          }
+          i {
+            display: inline-block;
+            background: @brand-color;
+            color: @white-color;
+            margin: 0px 45px;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 42px;
+            padding-left: 10px;
+            .transition-duration(@duration: 0.3s);
+          }
+          &:hover {
+            i {
+              background: @white-color;
+              color: @brand-color;
+            }
+            &:before {
+              border: 5px solid rgba(255,255,255, 0);
+            }
+            &:after {
+              .bg-rgba(@white-color, 0);
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+.csi-modal {
+  .bg-rgba(@black-color, 0.8);
+  .modal-dialog {
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+    .modal-content {
+      background: transparent;
+      box-shadow: none;
+      border: 0;
+      width: 100%;
+      .modal-header {
+        border-bottom: 0;
+        .close {
+          margin-top: -36px;
+          font-size: 30px;
+          color: @white-color;
+          padding: 7px 14px 8px;
+          border-radius: 50%;
+          opacity: .8;
+          -webkit-transition: all 0.2s ease-in-out 0s;
+          -moz-transition: all 0.2s ease-in-out 0s;
+          -ms-transition: all 0.2s ease-in-out 0s;
+          -o-transition: all 0.2s ease-in-out 0s;
+          transition: all 0.2s ease-in-out 0s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+      .modal-body {
+        width: 70%;
+        margin: 0 auto;
+        background: @black-color;
+        iframe {
+          width: 100%;
+          height: 650px;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+//Inner page
+.csi-milestone-about-inner {
+  background: transparent;
+  .csi-counter-area .counter-text {
+    color: @black-color;
+  }
+  .csi-inner {
+    background: @ash-color;
+  }
+}

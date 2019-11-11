@@ -1,0 +1,77 @@
+.csi-subscribtion {
+  background-image: url(http://placehold.it/527x275),
+                    url(http://placehold.it/527x275);
+  background-repeat: no-repeat;
+  background-position: 0 100%, 100% 100%;
+  .csi-heading{
+    margin-bottom: 4.2rem;
+  }
+}
+.csi-subscribe-area {
+  text-align: center;
+  .text {
+    margin-top: 0;
+    margin-bottom: 4.2rem;
+  }
+  .form-control {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 3px solid @ash-color;
+    border-radius: 50px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    &:hover,
+    &:focus {
+      -webkit-box-shadow: 0px 2px 10px rgba(52,61,71,.45);
+      -moz-box-shadow: 0px 2px 10px rgba(52,61,71,.45);
+      box-shadow: 0 2px 10px rgba(52,61,71,.45);
+    }
+  }
+  .csi-subscribe-input {
+    margin-bottom: 2.6rem;
+  }
+  .csi-submit-btn {
+    padding: .5rem 3.6rem;
+  }
+}
+
+
+
+//ZIKZAK
+.csi-subscribtion-zikzak {
+  position: relative;
+  background: transparent;
+  &:before {
+    background: url('../img/zikzak-top-ash-light.png') top center no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: -40px;
+    z-index: 3;
+  }
+  &:after {
+    background: url('../img/zikzak-bottom-ash-light.png') bottom center no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: -40px;
+  }
+}

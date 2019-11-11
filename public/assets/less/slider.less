@@ -1,0 +1,406 @@
+.csi-slider {
+  color: @white-color;
+  position: relative;
+  p {
+    color: @white-color;
+    opacity: .7;
+  }
+  .csi-inner {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .csi-item-center {
+    text-align: center;
+    .text {
+      margin: 0 auto;
+    }
+  }
+  .csi-item-left {
+    text-align: left;
+    .banner-btn {
+      .csi-btn {
+        margin-right: .5rem;
+      }
+    }
+  }
+  .csi-item-right {
+    text-align: right;
+    .text {
+      float: right;
+    }
+    .banner-btn {
+      float: right;
+    }
+  }
+  .owl-controls .owl-nav [class*=owl-]{
+    height: 60px;
+    width: 60px;
+    background: @brand-color;
+    .bg-rgba(@white-color, 0.10);
+    color: @white-color;
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 2px 10px rgba(52,61,71,.3);
+    -moz-box-shadow: 1px 2px 10px rgba(52,61,71,.3);
+    box-shadow: 1px 2px 10px rgba(52,61,71,.3);
+    &:hover {
+      background: @white-color;
+      color: @brand-color;
+    }
+  }
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 45%;
+    opacity: 0;
+    i {
+      font-size: 40px;
+      line-height: 49px;
+    }
+  }
+
+  .owl-prev {
+    left: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+  }
+  .owl-next {
+    right: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+  }
+
+  &:hover {
+    .owl-prev, .owl-next {
+      opacity: 1;
+    }
+    .owl-prev {
+      left: 15px;
+    }
+    .owl-next {
+      right: 15px;
+    }
+  }
+
+  .csi-brand {
+    background: transparent;
+    padding-top: 2rem;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s linear;
+
+    .csi-logo {
+      max-width: 180px;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s linear;
+    }
+  }
+
+  .slider-text-single {
+    figure {
+      position: relative;
+      figcaption {
+        //.bg-rgba(@black-color, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .figcaption-inner, .figcaption-inner-center, .figcaption-inner2 {
+          width: 100%;
+          height: 100%;
+        }
+        .csi-container {
+          max-width: 1170px;
+          display: block;
+          margin: 0 auto;
+          height: 100%;
+          padding-left: 20px;
+          padding-right: 20px;
+          .csi-hover-link {
+            width: 100%;
+            height: 100%;
+            display: table;
+            .csi-vertical {
+              display: table-cell;
+              vertical-align: middle;
+            }
+          }
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          .bg-rgba(@black-color, .2);
+          top: -38px;
+          left: 0;
+          width: 100%;
+          height: 20%;
+          -webkit-filter: blur(30px); /* Chrome, Safari, Opera */
+          filter: blur(30px);
+        }
+
+      }
+    }
+  }
+
+
+  .owl-theme .owl-controls {
+    margin-top: 0;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+
+//ANIMATION EFFECT
+#csi-main-slider,
+#csi-owlcontslider {
+  .active {
+
+    //SLIDER ITEM ONE ANIMATION
+    .csi-fadeInLeft-img {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: .3s;
+
+      -webkit-animation-name: fadeInLeft;
+      animation-name: fadeInLeft;
+
+    }
+
+    .csi-fadeInLeft-one {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: .9s;
+
+      -webkit-animation-name: fadeInLeft;
+      animation-name: fadeInLeft;
+
+    }
+
+    .csi-fadeInLeft-two {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 1.5s;
+
+      -webkit-animation-name: fadeInLeft;
+      animation-name: fadeInLeft;
+
+    }
+    .csi-fadeInLeft-three {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 2.1s;
+
+      -webkit-animation-name: fadeInLeft;
+      animation-name: fadeInLeft;
+
+    }
+
+    .csi-fadeInLeft-four {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 2.7s;
+
+      -webkit-animation-name: fadeInLeft;
+      animation-name: fadeInLeft;
+
+    }
+    //SLIDER ITEM ONE ANIMATION END
+
+
+    //SLIDER ITEM TWO ANIMATION
+    .csi-fadeInRight-img {
+
+      -webkit-animation-duration: .7s;
+      animation-duration: .7s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: .3s;
+
+      -webkit-animation-name: fadeInRight;
+      animation-name: fadeInRight;
+    }
+
+    .csi-zoomIn-one {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: .9s;
+
+
+      -webkit-animation-name: zoomIn;
+      animation-name: zoomIn;
+
+    }
+
+    .csi-zoomIn-two {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 1.5s;
+
+
+      -webkit-animation-name: zoomIn;
+      animation-name: zoomIn;
+
+    }
+    .csi-zoomIn-three {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 2.1s;
+
+      -webkit-animation-name: zoomIn;
+      animation-name: zoomIn;
+
+    }
+
+    .csi-fadeInRight-four {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 2.7s;
+
+
+      -webkit-animation-name: zoomIn;
+      animation-name: zoomIn;
+
+    }
+    //SLIDER ITEM TWO ANIMATION END
+
+
+    //SLIDER ITEM THREE ANIMATION
+
+    .csi-fadeInU-img {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: .3s;
+
+      -webkit-animation-name: fadeInUp;
+      animation-name: fadeInUp;
+    }
+
+    .csi-zoomInUp-one {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: .9s;
+
+      -webkit-animation-name: fadeInRight;
+      animation-name: fadeInRight;
+
+    }
+
+    .csi-zoomInUp-two {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 1.5s;
+
+      -webkit-animation-name: fadeInRight;
+      animation-name: fadeInRight;
+
+    }
+    .csi-zoomInUp-three {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 2.1s;
+
+      -webkit-animation-name: fadeInRight;
+      animation-name: fadeInRight;
+
+    }
+
+    .csi-zoomInUp-four {
+
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 2.1s;
+
+      -webkit-animation-name: fadeInRight;
+      animation-name: fadeInRight;
+
+    }
+    //SLIDER ITEM THREE ANIMATION END
+  }
+}
+
+#csi-main-slider .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+//Slider Responsive
+@media (max-width : 600px) {
+  .csi-slider {
+    .owl-carousel .owl-item,
+    .owl-carousel .owl-item img {
+      height: 350px;
+    }
+  }
+  .csi-slider {
+    .csi-banner-content {
+      margin-top: 2rem !important;
+      .csi-subtitle,
+      .csi-title {
+        .font-size(42) !important;
+        line-height: 6rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+

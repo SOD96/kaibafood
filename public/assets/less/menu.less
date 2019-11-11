@@ -1,0 +1,155 @@
+.csi-menu {
+  background: url('http://placehold.it/1920x1188') top center no-repeat fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .csi-inner {
+    .bg-rgba(@white-color, 0.9);
+    padding-bottom: 8.4rem;
+  }
+}
+.csi-nav-pills-area {
+  text-align: center;
+  margin-bottom: 4.2rem;
+  .csi-nav-pills {
+    display: inline-block;
+    li > a {
+      font-family: @csi-heading-font;
+      padding: 0 15px;
+      color: @black-color;
+      .font-size(26);
+      border: 2px solid transparent;
+      img {
+        margin-top: -10px;
+        opacity: .3;
+      }
+    }
+    li a:hover {
+      background-color: transparent;
+    }
+    li.active > a,
+    li.active > a:focus,
+    li.active > a:hover {
+      color: @brand-color;
+      background-color: transparent;
+      border: 2px solid @brand-color;
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+.csi-tab-content {
+  .active {
+    .csi-single-tab {
+      -webkit-animation-name: zoomIn;
+      animation-name: zoomIn;
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      animation-duration: 600ms;
+      animation-timing-function: linear;
+    }
+  }
+  .tab-pane {
+    .csi-single-tab {
+      margin-bottom: 2.6rem;
+      width: 48%;
+      margin-left: 1%;
+      margin-right: 1%;
+      float: left;
+      .menu-thumb,
+      .menu-content {
+        float: left;
+      }
+      .menu-thumb {
+        width: 30%;
+        border-radius: 50%;
+        position: relative;
+        padding-right: 1rem;
+        a {
+          border-radius: 50%;
+          img {
+            border-radius: 50%;
+            border: 2rem solid @ash-color;
+            -webkit-box-shadow: 0 0px 10px rgba(0,0,0,.25);
+            -moz-box-shadow: 0 0px 10px rgba(0,0,0,.25);
+            box-shadow: 0 0px 10px rgba(0,0,0,.25);
+            .transition-duration(@duration: 0.6s);
+          }
+        }
+      }
+      .menu-content {
+        width: 70%;
+        .csi-info {
+          .title-area {
+            .bg-rgba(@white-color, 1);
+            overflow: hidden;
+            padding: 5px 1.5rem 5px 5rem;
+            margin-left: -5rem;
+            border-radius: 0 50px 50px 0;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            .title {
+              font-family: @csi-heading-font;
+              display: inline-block;
+              .font-size(32);
+              line-height: 4.3rem;
+              font-weight: 400;
+              margin: 0;
+              color: @black-color;
+              a {
+                color: inherit;
+                &:hover {
+                  color: @white-color;
+                }
+              }
+            }
+            .price {
+              float: right;
+              display: inline-block;
+              font-family: @csi-heading-font;
+              .font-size(42);
+              color: @brand-color;
+              margin: 0;
+              line-height: 4.5rem;
+              span {
+                color: @black-color;
+                font-family: @csi-base-font;
+                font-weight: 400;
+                .font-size(16);
+              }
+            }
+          }
+        }
+        .text {
+          opacity: .8;
+        }
+      }
+      &:hover {
+        .menu-content .csi-info .title-area {
+          .title {
+            color: @white-color;
+          }
+          .bg-rgba(@brand-color, 0.9);
+          .price {
+            color: @white-color;
+          }
+        }
+        .menu-thumb a img {
+          border: 0 solid @ash-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+//Inner Page
+.csi-menu-inner {
+  background: transparent;
+  .csi-inner {
+    background: transparent;
+  }
+}

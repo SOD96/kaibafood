@@ -1,0 +1,281 @@
+.csi-news {
+  background: @body-bg-deep;
+
+  .csi-heading, .csi-btn {
+    text-align: center;
+  }
+  iframe {
+    width: 100%;
+    min-height: 209px;
+    border: none;
+    margin-bottom: 0;
+  }
+  .news-area {
+    overflow: hidden;
+    display: block;
+    margin-bottom: 1.6rem;
+  }
+  .single-news {
+    background: @white-color;
+    padding: 1rem;
+    text-align: left;
+    margin-bottom: 2.6rem;
+    border-radius: 6px;
+    figure {
+      position: relative;
+      a {
+        img {
+          .transition-duration(@duration: .5s);
+        }
+      }
+      figcaption {
+        background: @white-color;
+        position: absolute;
+        bottom: 1.6rem;
+        left: 1.6rem;
+        border-radius: 4px;
+        width: 60px;
+        height: 60px;
+        .transition-duration(@duration: .5s);
+        .date {
+          font-family: @csi-heading-font;
+          .font-noline(2.6);
+          font-weight: 900;
+          text-align: center;
+          color: @brand-color;
+          margin-top: .5rem;
+          span {
+            font-family: @csi-base-font;
+            display: block;
+            .font-size(16);
+            color: rgba(33, 39, 57, 0.7);
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    .news-content {
+      padding: 0 .6rem;
+      .title {
+        font-family: @csi-heading-font;
+        .font-size(32);
+        line-height: 3.2rem;
+        font-weight: 400;
+        color: @black-color;
+        a {
+          color: inherit;
+          .transition-duration(@duration: .5s);
+          &:hover {
+            color: @brand-color;
+          }
+        }
+      }
+      p {
+        padding-bottom: 1.6rem;
+        line-height: 2.2rem;
+      }
+      .readmore {
+        font-family: @csi-heading-font;
+        font-size: 1.6rem;
+        border-top: 1px solid @body-bg-deep;
+        padding: .6rem 0;
+        display: block;
+      }
+    }
+    &:hover {
+      figure {
+        a {
+          img {
+            border-radius: 4px;
+            -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.25);
+            -moz-box-shadow: 0 4px 10px rgba(0,0,0,.25);
+            box-shadow: 0 4px 10px rgba(0,0,0,.25);
+          }
+        }
+        figcaption {
+          .transition-duration(@duration: .5s);
+          bottom: -2rem;
+          opacity: 0;
+          .date {
+
+          }
+        }
+      }
+      .news-content {
+        .title {
+        }
+        p {
+
+        }
+        .readmore {
+
+        }
+      }
+    }
+  }
+}
+
+
+
+/*SINGLE NEWS*/
+.csi-news-single {
+  header {
+    margin-bottom: 2.6rem;
+    .hits-area {
+      border-bottom: 1px solid rgba(33, 39, 57, .1);
+      -webkit-background-clip: padding-box; /* for Safari */
+      background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+      padding: 1rem 0;
+      .date {
+        a {
+          .font-size(16);
+          font-weight: 400;
+          color: @black-color;
+          margin-right: 2rem;
+          display: inline-block;
+          opacity: .7;
+          i {
+            color: @brand-color;
+            opacity: .4;
+          }
+        }
+
+      }
+    }
+    .author {
+      overflow: hidden;
+      position: relative;
+      top: -30px;
+      z-index: 3;
+      margin-bottom: -30px !important;
+      .author-img,
+      .author-info {
+        float: left;
+      }
+      .author-img {
+        width: 15%;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .author-info {
+        width: 85%;
+        padding-left: 1.5rem;
+        margin-top: 2rem;
+        .name {
+          font-family: @csi-heading-font;
+          .font-size(26);
+          font-weight: 400;
+          margin-bottom: 0;
+          color: @black-color;
+        }
+        .subtitle {
+          margin-top: 2px;
+          color: @brand-color;
+        }
+      }
+    }
+    .text-area {
+      margin-top: 2.6rem !important;
+      .title {
+        font-family: @csi-heading-font;
+        .font-size(68);
+        font-weight: 400;
+        color: @black-color;
+        line-height: 7.5rem;
+        a {
+          color: inherit;
+        }
+      }
+    }
+  }
+  section {
+    p {
+      margin-bottom: 2.6rem;
+    }
+    .csi-img-left {
+      float: left;
+      padding:1rem 2rem 1.5rem 0;
+    }
+    .csi-img-right {
+      float: right;
+      padding: 1rem 0 1.5rem 2rem ;
+    }
+    .csi-img-center {
+      margin: 0 auto;
+      display: block;
+      padding: 1.5rem;
+    }
+  }
+  footer {
+    .title {
+      .font-size(26);
+      font-family: @csi-heading-font;
+      font-weight: 400;
+      color: @black-color;
+    }
+    .csi-share {
+      margin-left: 0;
+      border-top: 1px solid rgba(33, 39, 57, .1);
+      -webkit-background-clip: padding-box; /* for Safari */
+      background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+      padding: 1rem 0;
+      ul {
+        li {
+          border-radius: 50%;
+          text-align: center;
+          -webkit-transition: all .3s ease-in-out 0s;
+          -moz-transition: all .3s ease-in-out 0s;
+          -o-transition: all .3s ease-in-out 0s;
+          transition: all .3s ease-in-out 0s;
+          a {
+            background: @white-color;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            border-radius: 50%;
+            font-size: 26px;
+            i {
+              font-size: inherit;
+              line-height: 53px;
+            }
+            .fa-twitter {
+              color: #1da1f2;
+            }
+            .facebook-f {
+              color: #3b5998;
+            }
+            .fa-linkedin {
+              color: #00a0dc;
+            }
+            .fa-youtube-play {
+              color: #cd201f;
+            }
+            .fa-instagram {
+              color: #c13584;
+            }
+          }
+          &:hover {
+            a {
+              background: @brand-color;
+              color: @white-color;
+              i {
+                animation-name: zoomIn;
+                -webkit-transform-origin: center;
+                transform-origin: center;
+                animation-duration: 500ms;
+                animation-timing-function: linear;
+                color: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+

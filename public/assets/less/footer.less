@@ -1,0 +1,119 @@
+.csi-footer {
+  background: url('http://placehold.it/1920x613') bottom center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: @white-color;
+  .csi-inner {
+    .bg-rgba(@black-color, 0.95);
+    padding-bottom: 0;
+  }
+  .single {
+    p {
+      margin-bottom: 0;
+    }
+  }
+  p {
+    color: @white-color;
+    a {
+      opacity: 1;
+      color: @white-color;
+    }
+  }
+  .csi-footer-inner {
+      margin:  0 auto;
+    background: @brand-color;
+    padding: 2.6rem 0;
+
+  }
+  .footer-top-area {
+    .footer-social {
+      li {
+        text-align: center;
+        padding-right: 1px;
+        padding-left: 1px;
+        a {
+          .bg-rgba(@black-color, 1);
+          display: inline-block;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          .transition-duration(@duration: 0.6s);
+          i {
+            font-size: 26px;
+            line-height: 46px;
+          }
+          .fa-twitter {
+            color: #1da1f2;
+          }
+          .facebook-f,
+          .fa-facebook-f {
+            color: #3b5998;
+          }
+          .fa-linkedin {
+            color: #00a0dc;
+          }
+          .fa-youtube-play {
+            color: #cd201f;
+          }
+          .fa-instagram {
+            color: #c13584;
+          }
+          &:hover {
+            .bg-rgba(@white-color, .8);
+            i {
+              animation-name: zoomIn;
+              -webkit-transform-origin: center;
+              transform-origin: center;
+              animation-duration: 500ms;
+              animation-timing-function: linear;
+            }
+          }
+        }
+      }
+    }
+    .footer-top {
+      text-align: center;
+      .footer-logo {
+        display: block;
+        margin-bottom: 4.2rem;
+        img {
+
+        }
+      }
+    }
+    .single {
+      text-align: center;
+      p {
+        color: @ash-deep-color;
+      }
+      .title {
+        font-family: @csi-heading-font;
+        .font-noline(4.2);
+        font-weight: 400;
+        margin-bottom: 2.6rem;
+        color: @white-color;
+        letter-spacing: .08rem;
+        opacity: .7;
+        i {
+          color: @brand-color;
+        }
+      }
+    }
+  }
+  .csi-footer-bottom {
+    font-family: @csi-base-font;
+    p {
+      font-family: inherit;
+      color: @white-color;
+      .font-size(16);
+      font-weight: 400;
+      opacity: .7;
+    }
+    padding: 2.6rem 0;
+    .bg-rgba(@brand-color, 1);
+    margin-top: 11rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "html2text/html2text",
+    "description": "Converts HTML to formatted plain text",
+    "type": "library",
+    "license": "GPLv2",
+    "autoload": {
+        "psr-4": { "Html2Text\\": ["src/", "test/"] }
+    }
+
+}

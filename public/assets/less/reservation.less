@@ -1,0 +1,128 @@
+.csi-reservaton-area {
+  margin-bottom: 2.6rem;
+  text-align: center;
+  figure {
+    position: relative;
+    figcaption {
+      .bg-rgba(@black-color, 1);
+      border-radius: 6px;
+      position: absolute;
+      bottom: -26px;
+      left: 0;
+      width: 90%;
+      padding: 4.2rem 2.6rem;
+      margin: 0 5%;
+    }
+  }
+  form {
+    .error {
+      background: red;
+      padding: 0 10px;
+      color: @white-color;
+      font-weight: 400;
+    }
+    .csi-form-left {
+      .error {
+        float: right;
+      }
+    }
+    .csi-form-right {
+      .error {
+        float: left;
+      }
+    }
+    .form-group {
+      width: 49%;
+      margin: 0 .5% 1.6rem .5%;
+      float: left;
+      -webkit-box-shadow: 0 0px 10px rgba(0,0,0,.1);
+      -moz-box-shadow: 0 0px 10px rgba(0,0,0,.1);
+      box-shadow: 0 0px 10px rgba(0,0,0,.1);
+    }
+    .form-control {
+      text-align: left;
+      display: block;
+      width: 100%;
+      height: 45px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 3px solid @ash-color;
+      border-radius: 4px;
+      -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      &:focus,
+      &:hover {
+        border: 3px solid @brand-color;
+      }
+    }
+    .csi-form-left {
+      border-radius: 25px 0 0 25px;
+      .form-control {
+        border-radius: 25px 0 0 25px;
+      }
+    }
+    .csi-form-right {
+      border-radius: 0 25px 25px 0;
+      .form-control {
+        border-radius: 0 25px 25px 0;
+      }
+    }
+
+  }
+  .call-phone {
+    margin-top: 4.2rem;
+    .title {
+      font-family: @csi-heading-font;
+      .font-size(42);
+      font-weight: normal;
+      color: @brand-color;
+      margin-bottom: 0;
+    }
+    ul {
+      li {
+        font-family: @csi-heading-font;
+        .font-size(26);
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+
+
+//ZIKZAK
+.csi-reservation-zikzak {
+  position: relative;
+  &:before {
+    background: url('../img/zikzak-top-ash-light.png') top center no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: -40px;
+  }
+  position: relative;
+  &:after {
+    background: url('../img/zikzak-bottom-ash-light.png') bottom center no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: -40px;
+  }
+}
+
+

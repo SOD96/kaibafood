@@ -1,0 +1,8 @@
+.csi-banner {
+    background: url(https://i.imgur.com/rhtEo9F.png) top center no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}

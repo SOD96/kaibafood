@@ -57,6 +57,9 @@
 
     <!-- MASTER  STYLESHEET  -->
     <link id="csi-master-style" rel="stylesheet" href="assets/css/style-default.min.css" media="all" />
+    <!-- CUSTOM STYLES -->
+    <!-- MASTER  STYLESHEET  -->
+    <link rel="stylesheet" href="assets/css/style.css" media="all" />
 
     <!-- MODERNIZER CSS  -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>

@@ -712,93 +712,93 @@
 
 
     <!--MILESTONE-->
-    <section>
-        <div id="csi-milestone-about" class="csi-milestone-about">
-            <div class="csi-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="csi-milestone-area">
-                                <div class="csi-milestone">
-                                    <div class="milestone-inner">
-                                        <div class="csi-content">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="csi-counter-area">
-                                                        <img src="http://placehold.it/70x70" alt="milestone icon">
-                                                        <div class="counter-text">
-                                                            <small>Competition Winner</small>
-                                                            <span class="csi-counter">500</span>
-                                                        </div>
-                                                    </div>
-                                                </div> <!--//.COL-->
-                                                <div class="col-sm-6">
-                                                    <div class="csi-counter-area">
-                                                        <img src="http://placehold.it/70x70" alt="milestone icon">
-                                                        <div class="counter-text">
-                                                            <small>Year of Experience</small>
-                                                            <span class="csi-counter">12</span>
-                                                        </div>
-                                                    </div>
-                                                </div> <!--//.COL-->
-                                                <div class="col-sm-6">
-                                                    <div class="csi-counter-area">
-                                                        <img src="http://placehold.it/70x70" alt="milestone icon">
-                                                        <div class="counter-text">
-                                                            <small>Regular Clients</small>
-                                                            <span class="csi-counter">7896</span>
-                                                        </div>
-                                                    </div>
-                                                </div> <!--//.COL-->
-                                                <div class="col-sm-6">
-                                                    <div class="csi-counter-area">
-                                                        <img src="http://placehold.it/70x70" alt="milestone icon">
-                                                        <div class="counter-text">
-                                                            <small>Skilled Chefs</small>
-                                                            <span class="csi-counter">600</span>
-                                                        </div>
-                                                    </div>
-                                                </div> <!--//.COL-->
-                                            </div> <!--//.ROW-->
-                                        </div> <!--//. csi CONTENT CONTENT-->
-                                    </div><!--//.csi INNER-->
-                                </div><!--//.Milestone End -->
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="csi-video-area">
-                                <figure>
-                                    <a href="#"><img src="http://placehold.it/1000x614" alt="Special Food"></a>
-                                    <figcaption>
-                                        <div class="video-icon">
-                                            <div class="csi-vertical">
-                                                <a id="myModalLabel" class="icon" href="#" data-toggle="modal" data-target="#csi-modal">
-                                                    <i class="fa fa-play" aria-hidden="true"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <!-- Modal-->
-                                <div id="csi-modal" class="modal fade csi-modal">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <iframe id="modalvideo" src="https://www.youtube.com/embed/5mIdto_5z6c" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- //.Modal-->
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- //.CONTAINER -->
-            </div><!-- //.INNER -->
-        </div>
-    </section>
+    {{--<section>--}}
+        {{--<div id="csi-milestone-about" class="csi-milestone-about">--}}
+            {{--<div class="csi-inner">--}}
+                {{--<div class="container">--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-md-6">--}}
+                            {{--<div class="csi-milestone-area">--}}
+                                {{--<div class="csi-milestone">--}}
+                                    {{--<div class="milestone-inner">--}}
+                                        {{--<div class="csi-content">--}}
+                                            {{--<div class="row">--}}
+                                                {{--<div class="col-sm-6">--}}
+                                                    {{--<div class="csi-counter-area">--}}
+                                                        {{--<img src="http://placehold.it/70x70" alt="milestone icon">--}}
+                                                        {{--<div class="counter-text">--}}
+                                                            {{--<small>Competition Winner</small>--}}
+                                                            {{--<span class="csi-counter">500</span>--}}
+                                                        {{--</div>--}}
+                                                    {{--</div>--}}
+                                                {{--</div> <!--//.COL-->--}}
+                                                {{--<div class="col-sm-6">--}}
+                                                    {{--<div class="csi-counter-area">--}}
+                                                        {{--<img src="http://placehold.it/70x70" alt="milestone icon">--}}
+                                                        {{--<div class="counter-text">--}}
+                                                            {{--<small>Year of Experience</small>--}}
+                                                            {{--<span class="csi-counter">12</span>--}}
+                                                        {{--</div>--}}
+                                                    {{--</div>--}}
+                                                {{--</div> <!--//.COL-->--}}
+                                                {{--<div class="col-sm-6">--}}
+                                                    {{--<div class="csi-counter-area">--}}
+                                                        {{--<img src="http://placehold.it/70x70" alt="milestone icon">--}}
+                                                        {{--<div class="counter-text">--}}
+                                                            {{--<small>Regular Clients</small>--}}
+                                                            {{--<span class="csi-counter">7896</span>--}}
+                                                        {{--</div>--}}
+                                                    {{--</div>--}}
+                                                {{--</div> <!--//.COL-->--}}
+                                                {{--<div class="col-sm-6">--}}
+                                                    {{--<div class="csi-counter-area">--}}
+                                                        {{--<img src="http://placehold.it/70x70" alt="milestone icon">--}}
+                                                        {{--<div class="counter-text">--}}
+                                                            {{--<small>Skilled Chefs</small>--}}
+                                                            {{--<span class="csi-counter">600</span>--}}
+                                                        {{--</div>--}}
+                                                    {{--</div>--}}
+                                                {{--</div> <!--//.COL-->--}}
+                                            {{--</div> <!--//.ROW-->--}}
+                                        {{--</div> <!--//. csi CONTENT CONTENT-->--}}
+                                    {{--</div><!--//.csi INNER-->--}}
+                                {{--</div><!--//.Milestone End -->--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-md-6">--}}
+                            {{--<div class="csi-video-area">--}}
+                                {{--<figure>--}}
+                                    {{--<a href="#"><img src="http://placehold.it/1000x614" alt="Special Food"></a>--}}
+                                    {{--<figcaption>--}}
+                                        {{--<div class="video-icon">--}}
+                                            {{--<div class="csi-vertical">--}}
+                                                {{--<a id="myModalLabel" class="icon" href="#" data-toggle="modal" data-target="#csi-modal">--}}
+                                                    {{--<i class="fa fa-play" aria-hidden="true"></i>--}}
+                                                {{--</a>--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                    {{--</figcaption>--}}
+                                {{--</figure>--}}
+                                {{--<!-- Modal-->--}}
+                                {{--<div id="csi-modal" class="modal fade csi-modal">--}}
+                                    {{--<div class="modal-dialog">--}}
+                                        {{--<div class="modal-content">--}}
+                                            {{--<div class="modal-header">--}}
+                                                {{--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="modal-body">--}}
+                                                {{--<iframe id="modalvideo" src="https://www.youtube.com/embed/5mIdto_5z6c" allowfullscreen></iframe>--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                {{--</div> <!-- //.Modal-->--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div><!-- //.CONTAINER -->--}}
+            {{--</div><!-- //.INNER -->--}}
+        {{--</div>--}}
+    {{--</section>--}}
     <!--MILESTONE END-->
 
 
@@ -897,7 +897,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                             <div class="csi-subscribe-area">
-                                <p class="text">If you want to recieve the latest news, offers and service information,<br> please subscribe to us.</p>
+                                <p class="text">If you want to receive the latest news, offers and service information,<br> please subscribe to us.</p>
                                 <div class="subscribe-form">
                                     <form class="subscribe-form-action csi-subscribe-form" action="#">
                                         <div class="form-group csi-subscribe-input">
@@ -924,13 +924,6 @@
             <div class="csi-inner">
                 <div class="footer-top-area">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="footer-top">
-                                    <a class="footer-logo" href="index.html"><img src="http://placehold.it/170x70" alt="logo"/></a>
-                                </div>
-                            </div>
-                        </div><!--//.ROW-->
                         <div class="row">
                             <div class="col-xs-12 col-sm-3">
                                 <div class="single">
